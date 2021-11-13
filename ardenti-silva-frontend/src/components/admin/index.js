@@ -1,11 +1,8 @@
 import { useState } from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import Map from "../map"
-import BusTable from "../bus"
-import InspectorsTable from "../inspectors"
-import BusRouteTable from "../busRoute"
-import BrigadeTable from "../brigade"
-import TasksTable from "../tasks"
+import InspectorsTable from "../brigade"
+import TasksTable from "../camera"
 import './styles.css'
 import Logo from './logo.jpg'
 
@@ -26,15 +23,6 @@ const Admin = () => {
             }
             case 3: {
                 return <InspectorsTable />
-            }
-            case 4: {
-                return <BrigadeTable />
-            }
-            case 5: {
-                return <BusTable />
-            }
-            case 6: {
-                return <BusRouteTable />
             }
         }
 

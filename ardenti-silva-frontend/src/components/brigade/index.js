@@ -1,92 +1,47 @@
-import { useState } from "react";
-import { Modal, Button } from "react-bootstrap"
-import BootstrapTable from 'react-bootstrap-table-next'
+import { Table, Button } from "react-bootstrap"
 
-const BrigadeTable = () => {
-    const columns = [
-        {
-            dataField: 'id',
-            text: '#'
-        },
-        {
-            dataField: 'name',
-            text: 'Название бригады'
-        },
-        {
-            dataField: 'count',
-            text: 'Количество штрафов',
-        },
-        {
-            dataField: 'busNumber',
-            text: 'Номер автобуса'
-        }
-    ];
-    const data = [
-        {
-            id: '1',
-            name: 'Бригада 1',
-            count: '100',
-            busNumber: '586'
-        },
-        {
-            id: '2',
-            name: 'Бригада 2',
-            count: '200',
-            busNumber: '2'
-        },
-    ]
-    const rowEvents = {
-        onClick: (e, row, rowIndex) => {
-          setLgShow(true)
-          setModalDataIndex(rowIndex)
-        }
-    }
-    const modalDataArray = [
-        [
-            'Пупкин Вася', 'Петров Петр',
-        ],
-        [
-            'Васильева Анна', 'Пупочкина Мария',
-        ]
-    ]
-    const [modalDataIndex, setModalDataIndex] = useState(0)
-    const [lgShow, setLgShow] = useState(false)
-
-    const makeModalDataList = () => {
-        let result = []
-
-        for (let i = 0; i < modalDataArray[modalDataIndex].length; i++) {
-            result.push(
-                <div style={{"padding":"20px"}}>
-                    {modalDataArray[modalDataIndex][i]}
-                    <Button variant="danger" size="sm" style={{ "margin":"10px", "background-color": "rgb(233,0,0)" }}>Убрать контролера</Button>
-                </div>
-            )
-        }
-
-        return result
-    }
-
+const InspectorsTable = () => {
     return (
         <div style={{ "margin": "50px", "padding": "50px" }}>
-            <BootstrapTable keyField='id' data={data} columns={columns} rowEvents={rowEvents}/>
-            <Modal
-                size="lg"
-                show={lgShow}
-                onHide={() => setLgShow(false)}
-                aria-labelledby="example-modal-sizes-title-lg"
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title id="example-modal-sizes-title-lg">
-                        Состав бригады
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    {makeModalDataList()}
-                </Modal.Body>
-            </Modal>
+            <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(8,8,8)" }}>Добавить бригаду</Button>
+            <Table striped bordered hover>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Название</th>
+                        <th>Средства пожаротушения</th>
+                        <th>Адрес</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Пожарно-спасательная часть № 1 по охране города Кызыл</td>
+                        <td>пожарная автоцистерна</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Первый Отряд ФПС по Республике Тыва</td>
+                        <td>пожарная мотопомпа</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Пожарная часть №8 по охране Кызылского района</td>
+                        <td>самоходная машина</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Пожарная часть № 17 - Шагонар</td>
+                        <td>десантная авиация</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </Table>
         </div>
     )
 }
 
-export default BrigadeTable
+export default InspectorsTable
