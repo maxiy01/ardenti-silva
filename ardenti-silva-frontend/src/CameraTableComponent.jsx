@@ -35,6 +35,7 @@ export class CameraTable extends React.Component
                 rows[y] = [];
             let url = this.state.cameras[i];
             rows[y].push(<td><img src={url} style={{width: this.state.video_width, height: this.state.video_height}}/></td>);
+            //rows[y].push(<td><video src={url} style={{width: this.state.video_width, height: this.state.video_height}} autoPlay={true} autoplay width={this.state.video_width} height={this.state.video_height}/></td>);
         }
         for(let i = 0; i < rows.length; ++i)
         {

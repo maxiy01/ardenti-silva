@@ -1,8 +1,8 @@
 {
     "camera_urls":
     [
-        "http://192.168.1.86:8000",
-        "http://laura.paide.ee:8888/axis-cgi/mjpg/video.cgi?camera=&resolution=320x240&fps=15",
+        "http://192.168.1.86:5001",
+        "http://192.168.1.86:5002",
         "http://webcam01.ecn.purdue.edu/axis-cgi/mjpg/video.cgi",
         "http://camera3.buffalotrace.com/axis-cgi/mjpg/video.cgi",
         "http://74.92.201.146/mjpg/video.mjpg",
