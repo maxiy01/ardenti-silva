@@ -1,17 +1,17 @@
 {
     "camera_urls":
     [
-        "http://192.168.1.86:5001",
-        "http://192.168.1.86:5002",
+        "http://127.0.0.1:8765/1.gif",
+        "http://127.0.0.1:8765/8.gif",
         "http://webcam01.ecn.purdue.edu/axis-cgi/mjpg/video.cgi",
         "http://camera3.buffalotrace.com/axis-cgi/mjpg/video.cgi",
         "http://74.92.201.146/mjpg/video.mjpg",
-        "http://klosterplatz.selfip.info/mjpg/video.mjpg",
+        "http://camera.butovo.com/axis-cgi/mjpg/video.cgi?showlength=1",
         "http://83.146.208.254:81/cgi-bin/faststream.jpg?stream=full&fps=15",
         "http://csf4utnf.dyndns.org:8080/cgi-bin/faststream.jpg?stream=full&fps=15",
         "http://camera.kkbtv.com:8080/nphMotionJpeg?resolution=320x240",
         "http://62.108.201.7/cgi-bin/faststream.jpg?stream=full&fps=24",
-        "http://74.92.201.146/mjpg/video.mjpg",
+        "http://webkamera.overtornea.se/axis-cgi/mjpg/video.cgi?camera=&resolution=352x288",
         "http://klosterplatz.selfip.info/mjpg/video.mjpg"
        
     ]

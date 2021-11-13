@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import Map from "../map"
 import InspectorsTable from "../brigade"
-import TasksTable from "../camera"
+import Cameras from "../camera"
 import './styles.css'
 import Logo from './logo.jpg'
 
@@ -19,7 +19,7 @@ const Admin = () => {
                 return <Map />
             }
             case 2: {
-                return <TasksTable />
+                return <Cameras />
             }
             case 3: {
                 return <InspectorsTable />

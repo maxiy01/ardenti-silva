@@ -1,6 +1,6 @@
 import { Table, Button } from "react-bootstrap"
 
-const InspectorsTable = () => {
+const FirefightersTable = () => {
     return (
         <div style={{ "margin": "50px", "padding": "50px" }}>
             <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(8,8,8)" }}>Добавить бригаду</Button>
@@ -44,4 +44,4 @@ const InspectorsTable = () => {
     )
 }
 
-export default InspectorsTable
+export default FirefightersTable
