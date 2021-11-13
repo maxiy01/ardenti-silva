@@ -1,0 +1,10 @@
+html,
+body {
+  height: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    font-size: "40";
+}
