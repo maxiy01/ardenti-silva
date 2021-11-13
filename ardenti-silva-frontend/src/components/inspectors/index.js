@@ -3,7 +3,7 @@ import { Table, Button } from "react-bootstrap"
 const InspectorsTable = () => {
     return (
         <div style={{ "margin": "50px", "padding": "50px" }}>
-            <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(233,0,0)" }}>Добавить бригаду</Button>
+            <Button variant="danger" style={{ "marginBottom": "50px", "background-color": "rgb(8,8,8)" }}>Добавить бригаду</Button>
             <Table striped bordered hover>
                 <thead>
                     <tr>

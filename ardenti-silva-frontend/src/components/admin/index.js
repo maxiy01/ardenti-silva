@@ -7,7 +7,7 @@ import BusRouteTable from "../busRoute"
 import BrigadeTable from "../brigade"
 import TasksTable from "../tasks"
 import './styles.css'
-import Logo from './logo.svg'
+import Logo from './logo.jpg'
 
 const Admin = () => {
 
@@ -48,19 +48,19 @@ const Admin = () => {
                         <img
                             alt=""
                             src={Logo}
-                            width="30"
+                            width="270"
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        Ardenti silva
+                        
                     </Navbar.Brand>
                 </Container>
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link onClick={() => changePage(1)}>Камеры</Nav.Link>
-                            <Nav.Link onClick={() => changePage(2)}>Карта</Nav.Link>
+                            <Nav.Link onClick={() => changePage(1)}>Карта</Nav.Link>
+                            <Nav.Link onClick={() => changePage(2)}>Камеры</Nav.Link>
                             <Nav.Link onClick={() => changePage(3)}>Бригады</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
