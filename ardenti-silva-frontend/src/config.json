@@ -1,0 +1,15 @@
+{
+    "camera_urls":
+    [
+        "http://192.168.1.86:8000",
+        "http://laura.paide.ee:8888/axis-cgi/mjpg/video.cgi?camera=&resolution=320x240&fps=15",
+        "http://webcam01.ecn.purdue.edu/axis-cgi/mjpg/video.cgi",
+        "http://camera3.buffalotrace.com/axis-cgi/mjpg/video.cgi",
+        "http://74.92.201.146/mjpg/video.mjpg",
+        "http://klosterplatz.selfip.info/mjpg/video.mjpg",
+        "http://83.146.208.254:81/cgi-bin/faststream.jpg?stream=full&fps=15",
+        "http://csf4utnf.dyndns.org:8080/cgi-bin/faststream.jpg?stream=full&fps=15",
+        "http://camera.kkbtv.com:8080/nphMotionJpeg?resolution=320x240",
+        "http://62.108.201.7/cgi-bin/faststream.jpg?stream=full&fps=24"
+    ]
+}
